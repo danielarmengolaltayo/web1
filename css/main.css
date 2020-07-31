@@ -1,0 +1,214 @@
+/*GENERAL*/
+
+html {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    /*margin: 100px 35px 30px 35px;*/
+    margin: 35px;
+    padding: 0px;
+    /*padding: 2em 2em 2em;*/
+    font-family: sans-serif, Helvetica, Arial, "Helvetica Neue";
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+h1 {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/*utilitzat ens els thumbnails de la home*/
+h2 {
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/*utilitzat al about*/
+h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 19px;
+    margin: 0px;
+}
+
+/*text gran*/
+h4 {
+    color: #000;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 0px;
+}
+
+a {
+    color: #00f; 
+    text-decoration: none;
+    border-bottom: 2px solid #00f;
+    padding-bottom: 0px;
+    background-color: none;
+    outline: none;
+}
+
+a:hover {
+    background-color: #00f; 
+    color: #fff;
+    outline: none;
+}
+
+img {
+    border-style: none;
+    vertical-align: top;
+    /*margin: 10px 20px 10px 0px;*/
+}
+
+.image-link {
+    border: none;
+}
+
+/*NAVIGATION*/
+
+htitle {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    position: fixed;
+    top: 30px;
+    left: 35px;
+    z-index: 999;
+}
+
+hmenu {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    position: fixed;
+    top: 30px;
+    right: 35px;
+    z-index: 999;
+    text-align: right;
+}
+
+/*HOME*/
+
+.content-home {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.thumb {
+    display: inline-block;
+    margin: 20px 40px 20px 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.thumb img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*PROJECTS*/
+
+htitleproject {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    position: fixed;
+    z-index: 999;
+    top: 30px;
+}
+
+hcol {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 0px; /*44 = alçada de fer dos canvis de linia*/
+    display: block;
+}
+
+.content-projects {
+    /*margin-top: 35px;*/
+    margin-bottom: 70px;
+    width: 100%;
+    display: inline-block;
+}
+
+.mid {
+    width: 300px;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    width:50%;
+}
+
+.left, .leftMenu {
+    float: left;
+    width: 50%;
+}
+
+.right, .rightMenu {
+    float: right;
+    width: 50%;
+}
+
+.divider {
+    width: 100%;
+    float: left;
+}
+
+.grid {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*ABOUT*/
+
+.content-about {
+    width: 100%;
+    display: table;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.zoom {
+    position: absolute;
+    margin: 0;
+    height: 20;
+}
+
+/*media query*/
+
+@media (max-width: 800px) {
+    .left, .right {
+        float: none;
+        width: 100%;
+    }
+    
+    .mid {
+        width: 100%;   
+    }
+    
+    htitleproject{
+        top: 70px;
+        position: relative;
+    }
+}
